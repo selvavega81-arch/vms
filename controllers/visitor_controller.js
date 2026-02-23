@@ -44,8 +44,8 @@ const sendOtp = (req, res) => {
 
   // Generate 4-digit OTP
   // Generate 4-digit OTP
-  const otp = Math.floor(1000 + Math.random() * 9000).toString();
-  // const otp = '1234'; // Fixed OTP for temporary bypass
+  // const otp = Math.floor(1000 + Math.random() * 9000).toString();
+  const otp = '1234'; // Fixed OTP for temporary bypass
 
   // Set expiry time to 5 minutes from now
   const expiry = new Date(Date.now() + 5 * 60 * 1000);
