@@ -285,7 +285,8 @@ exports.sendOtp = (req, res) => {
       return res.status(404).json({ message: 'No visitor found with this contact' });
     }
 
-    const otp = Math.floor(1000 + Math.random() * 9000).toString();
+    // const otp = Math.floor(1000 + Math.random() * 9000).toString();
+    const otp = '1234';
     const expiry = new Date(Date.now() + 5 * 60 * 1000); // 5 minutes expiry
 
 
